@@ -1,0 +1,36 @@
+There are 8 functions-
+1)int isSorted(int *a, int n);
+2)void bubblePass(int *a, int n);
+3)void bubbleSort(int *a, int n);
+4)int numBubblePasses(int *a, int n);
+5)int maxIndex(int *a, int n);
+6)void swapWithMax(int *a, int n);
+7)void selectionSort(int *a, int n);
+8)int numSwaps(int *a, int n);
+
+1)int isSorted(int *a, int n);
+Checks if the array passed is sorted ,for this it checks if for all i <n-1 a[i] is lesser than a[i+1]
+if it is not for any values of i then 0 is returned.after the loop 1 is returned.
+
+2)void bubblePass(int *a, int n);
+the functon swaps a[i] with a[i+1] if a[i+1] is smaller than a[i] for i running from 0 to n-1
+
+3)void bubbleSort(int *a, int n);
+calls bubblePass(a,n-i) for i running from 0 to n-1 which sorts the whole array
+
+4)int numBubblePasses(int *a, int n);
+calls bubblePass and increments count everytime a swap occurs
+function returns the total number of swaps in the end
+
+5)int maxIndex(int *a, int n);
+returns the index of the element that is the maximum in the array
+
+6)void swapWithMax(int *a, int n);
+swaps the n-i values with max value if index is of max is not equal to n-i-1 
+where i runs from 0 to n-1
+
+7)void selectionSort(int *a, int n);
+function to sort the array using selection Sort by using swapWithMax and maxIndex functions
+
+8)int numSwaps(int *a, int n);
+returns the total number of swaps required to sort the array in ascending order using selection sort.

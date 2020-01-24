@@ -1,0 +1,35 @@
+There are 5 functions
+1.int searchFirstOccurrence(char *pattern, char *text);
+2.int searchLastOccurrence(char *pattern, char *text);
+3.int numOccurrences(char *pattern, char *text);
+4.int longestPrefix(char *pattern, char *text);
+5.int charactersCompared(char *pattern, char *text);
+
+1.int searchFirstOccurrence(char *pattern, char *text);
+The function contains of nested loops with the base loop running from 0 to n-1 and sub loop from 0 to m-1 where n is length of text and m is length of pattern.
+the function checks if the character at position i+j in text is same as character at position j in pattern if it is not break and another if condition that checks if end of pattern is reached.
+If it is reached the function returns i which is the index of the pattern in the string.
+
+2.int searchLastOccurrence(char *pattern, char *text);
+The function contains of nested loops with the base loop running from n-m+1 to 0 and sub loop from 0 to m-1 where n is length of text and m is length of pattern.
+the function checks if the character at position i+j in text is same as character at position j in pattern if it is not break and another if condition that checks if end of pattern is reached.
+If it is reached the function returns i which is the index of the pattern in the string.
+
+3.int numOccurrences(char *pattern, char *text);
+The function contains of nested loops with the base loop running from 0 to n-1 and sub loop from 0 to m-1 where n is length of text and m is length of pattern.
+the function checks if the character at position i+j in text is same as character at position j in pattern if it is not break and another if condition that checks if end of pattern is reached.
+If it is reached count is incremented.
+and the function returns count in the end.
+
+4.int longestPrefix(char *pattern, char *text);
+The function contains of nested loops with the base loop running from 0 to n-1 and sub loop from 0 to m-1 where n is length of text and m is length of pattern.
+the function checks if the character at position i+j in text is same as character at position j in pattern if it is not break.
+if j is > max then max takes the value of j.
+Max is returned at the end of the function.
+
+5.int charactersCompared(char *pattern, char *text);
+The function contains of nested loops with the base loop running from 0 to n-m+1 and sub loop from 0 to m-1 where n is length of text and m is length of pattern.
+the function checks if the character at position i+j in text is same as character at position j in pattern if it is not break.
+A count is maintained whose value if incremented every time the j for loop is entered.
+Count is returned at the end of the function.
+

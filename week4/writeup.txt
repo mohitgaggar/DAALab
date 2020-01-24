@@ -1,0 +1,8 @@
+1.tsp
+calls getnextpermutation until permutations exist and then calls getcost on the permutation ,if the cost is <min then min =cost and after the loop is over min is returned.
+
+2.printpath
+calls tsp to get the minimum cost and then runs a loop for all possible permutations and if cost of the permutation is = min cost the permuation is returned
+
+3.getcost
+returns the cost of the permuatation by adding the cost of travelling from one node to another.

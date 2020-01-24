@@ -1,0 +1,21 @@
+There are 3 functions in the c file
+1.int searchFirstOccurrence(int arr[], int n, int key)
+2.int searchLastOccurrence(int arr[], int n, int key)
+3.int numOccurrences(int arr[], int n, int key)
+
+1.
+in the first function we start a for loop that runs from 0 to n-1 and checks if the array element is equal to key(arr[i]==key)
+if it is equal then we directly return i
+if it is not equal the loop keeps continuing and when control comes out of the loop then -1 is returned which means key wasnt found.
+
+
+2.
+in the second function we start a for loop that runs from n-1 to 0 and checks if the array element is equal to key(arr[i]==key)
+if it is equal then we directly return i
+if it is not equal the loop keeps continuing and when control comes out of the loop then -1 is returned which means key wasnt found.
+
+3.
+in the third function we declare a variable count initialized to 0 and start a for loop that runs from 0 to n-1 and checks if the array element is equal to key(arr[i]==key)
+if it is equal then we increment count.
+if it is not equal the loop keeps continuing without incrementing count.
+when control comes out of the loop count is returned.
