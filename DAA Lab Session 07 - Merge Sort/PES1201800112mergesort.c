@@ -45,9 +45,6 @@ void mergeSort(int *a, int start, int end)
         mergeSort(a,start,mid);
         mergeSort(a,mid+1,end);
         mergeSortedHalfs(a,start,mid,end);
-        for(int i=start;i<=end;i++)
-            printf("%d ",a[i]);
-        printf("\n");
     }
 }
 
